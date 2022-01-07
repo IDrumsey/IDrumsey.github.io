@@ -1,0 +1,39 @@
+.section-title {
+    font-family: "The_Nautical";
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+// https://www.youtube.com/watch?v=9YffrCViTVk
+.video-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+    width: 90%;
+    margin: 25px 0;
+}
+
+#video-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 25px;
+}
+
+@media (max-width: 768px) {
+    .video-wrapper {
+        width: 100%;
+    }
+
+    #video-grid {
+        display: block;
+    }
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
