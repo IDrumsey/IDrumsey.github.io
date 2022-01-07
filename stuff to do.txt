@@ -1,0 +1,2 @@
+gloss backgrounds for cards
+figure out how to apply font globally

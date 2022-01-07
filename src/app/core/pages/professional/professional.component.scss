@@ -1,0 +1,70 @@
+.skill-card {
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 20px 10px;
+    position: relative;
+}
+
+#skills, #projects {
+    column-gap: auto;
+    row-gap: 25px;
+}
+
+.skill-card:nth-child(even) {
+    margin-left: auto;
+}
+
+#education-pic,
+#skills-pic,
+#projects-pic {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#education-pic {
+    object-position: 50% 50%;
+}
+
+#skills-pic {
+    height: 150px;
+    object-position: 50% 70%;
+}
+
+#projects-pic {
+    object-position: 50% 40%;
+}
+
+.section-title {
+    font-family: "The_Nautical";
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.college-name {
+    font-family: "Roboto Condensed";
+    font-weight: bold;
+}
+
+@media (min-width: 540px){
+    .grad-date {
+        margin-left: auto;
+    }
+
+    .metadata-grad-info {
+        display: flex;
+    }
+}
+
+app-card {
+    background: #fff;
+}
+
+#youtube-channel-ref {
+    display: inline-block;
+    margin: auto;
+}

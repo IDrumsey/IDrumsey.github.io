@@ -1,0 +1,36 @@
+<!-- Education -->
+<div>
+    <h1 style="font-weight: bold;" class="section-title">Education</h1>
+    <img src="../../../../assets/pics/pexels-element-digital-1370296.jpg" id="education-pic">
+    <h4 class="college-name mb-3">College name</h4>
+    <div class="metadata-grad-info mb-3">
+        <h5 class="mb-0">Bachelor's of Computer Science</h5>
+        <h6 style="font-style: italic;" class="grad-date">Spring 2022</h6>
+    </div>
+    <h6 style="font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laboriosam officiis quibusdam aspernatur mollitia provident qui beatae inventore adipisci soluta nam praesentium rem accusamus est dolorum enim eaque ad dolores explicabo doloribus consequuntur repudiandae, fuga porro? Aliquid a exercitationem eaque.</h6>
+</div>
+<hr>
+<h1 style="font-weight: bold;" class="section-title mt-4">Youtube</h1>
+<p>I make videos about computer science stuff on my youtube channel.</p>
+<div id="youtube-channel-ref">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gokzrqOK7Yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<!-- skill cards -->
+<h1 style="font-weight: bold;" class="section-title mt-4">Skills</h1>
+<img src="../../../../assets/pics/pexels-pavel-chernonogov-2381463.jpg" id="skills-pic">
+<div class="row mx-auto my-5" id="skills">
+    <app-card class="col-sm-12 col-md-5 skill-card" *ngFor="let skill of skills" [title]="skill.title" [description]="skill.desc">
+        <img #icon [src]="skill.iconURL">
+        <a *ngFor="let project of skill.projects" [href]="project.link" style="display: block;">{{project.title}}</a>
+    </app-card>
+</div>
+<hr>
+<!-- Projects -->
+<h1 style="font-weight: bold;" class="section-title mt-4">Projects</h1>
+<img src="../../../../assets/pics/pexels-jeshootscom-834892.jpg" id="projects-pic">
+<div class="row mx-auto my-5" id="projects">
+    <app-card class="col-sm-12 col-md-5 skill-card" *ngFor="let project of projects" [title]="project.title" [description]="project.desc">
+        <a [href]="project.codeURL">The code</a>
+    </app-card>
+</div>
+<img style="height: 350px;" src="../../../../assets/pics/css.meme.jpg">
