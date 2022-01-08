@@ -50,6 +50,21 @@
     font-weight: bold;
 }
 
+#youtube-channel-ref {
+    position: relative;
+    padding-top: 56.25%;
+    width: 100%;
+    margin: 25px 0;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @media (min-width: 540px){
     .grad-date {
         margin-left: auto;
@@ -62,9 +77,4 @@
 
 app-card {
     background: #fff;
-}
-
-#youtube-channel-ref {
-    display: inline-block;
-    margin: auto;
 }
