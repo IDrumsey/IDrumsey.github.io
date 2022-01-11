@@ -50,10 +50,14 @@
     font-weight: bold;
 }
 
+#youtube-ref-wrapper {
+    width: 100%;
+}
+
 #youtube-channel-ref {
     position: relative;
     padding-top: 56.25%;
-    width: 100%;
+    height: 50px;
     margin: 25px 0;
 }
 
@@ -72,6 +76,10 @@ iframe {
 
     .metadata-grad-info {
         display: flex;
+    }
+
+    #youtube-ref-wrapper {
+        width: 50%;
     }
 }
 
