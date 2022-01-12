@@ -143,6 +143,7 @@ export class ProfessionalComponent implements OnInit {
   projects: {
     title: string,
     desc: string,
+    siteURL?: string,
     codeURL: string
   }[] = [
     {
@@ -153,6 +154,7 @@ export class ProfessionalComponent implements OnInit {
     {
       title: "Roadtrips IO",
       desc: "This is a website that I really liked working on. I started on the concept of van life. Basically it allows you to plan out roadtrips using Google Map's JS API. I didn't fully finish it, but got really far. My free trial of the API ran out lol.",
+
       codeURL: "https://github.com/IDrumsey/Shelf-Stock"
     },
     {
@@ -163,6 +165,7 @@ export class ProfessionalComponent implements OnInit {
     {
       title: "Poll App",
       desc: "This was the most recent project I've done except for the Profile project. It's pretty simple and just allows people to create polls and answer polls.",
+      siteURL: "http://3.216.61.25/",
       codeURL: "https://github.com/IDrumsey/PollApp"
     },
     {
