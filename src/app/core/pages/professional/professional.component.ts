@@ -165,7 +165,7 @@ export class ProfessionalComponent implements OnInit {
     {
       title: "Poll App",
       desc: "This was the most recent project I've done except for the Profile project. It's pretty simple and just allows people to create polls and answer polls.",
-      siteURL: "http://3.216.61.25/",
+      siteURL: "http://mypollapp.com/",
       codeURL: "https://github.com/IDrumsey/PollApp"
     },
     {
