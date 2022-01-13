@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ThemeManagerService } from './core/services/theme-manager.service';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +9,12 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
 
-  constructor(private router: Router){}
-  
+  constructor(private router: Router, private theme: ThemeManagerService){
+    this.darkMode = theme.isDarkMode
+  }
+
+  // ---------------------------- STATE ----------------------------
+  darkMode: boolean
 
   // ---------------------------- FUNCTIONALITY ----------------------------
 
@@ -19,5 +24,12 @@ export class AppComponent {
 
   onPersonalToggleBtnClick() {
     this.router.navigate(['personal'])
+  }
+
+  get containerStyles(): {} {
+    return {
+      backgroundColor: this.darkMode ? "rgb(20, 20, 20)" : "rgb(247, 243, 236)",
+      color: this.darkMode ? "#fff" : "#000"
+    }
   }
 }

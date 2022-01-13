@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemeManagerService } from '../../services/theme-manager.service';
 
 @Component({
   selector: 'app-professional',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfessionalComponent implements OnInit {
 
-  constructor() { }
+  constructor(private theme: ThemeManagerService) { }
 
   ngOnInit(): void {
+    this.darkMode = this.theme.isDarkMode
+  }
+
+  darkMode: boolean
+
+  get cardStyles(): {} {
+    return {
+      backgroundColor: this.darkMode ? "#3b3b3b" : "#fff",
+      borderColor: this.darkMode ? "#fff" : "#000"
+    }
   }
 
   skills: {
