@@ -144,17 +144,30 @@ export class ProfessionalComponent implements OnInit {
     title: string,
     desc: string,
     siteURL?: string,
-    codeURL: string
+    codeURL: string,
+    mainTechnologies?: string[],
+    subTechnologies?: string[]
   }[] = [
     {
       title: "Profile Project",
       desc: "Website for my future employers to see.",
-      codeURL: ""
+      codeURL: "https://github.com/IDrumsey/IDrumsey.github.io",
+      siteURL: "https://idrumsey.github.io/",
+      mainTechnologies: [
+        "Angular",
+        "Nodejs",
+        "MongoDB",
+      ],
+      subTechnologies: [
+        "Angular Material",
+        "Express",
+        "Nodemon",
+        "Bootstrap"
+      ]
     },
     {
       title: "Roadtrips IO",
       desc: "This is a website that I really liked working on. I started on the concept of van life. Basically it allows you to plan out roadtrips using Google Map's JS API. I didn't fully finish it, but got really far. My free trial of the API ran out lol.",
-
       codeURL: "https://github.com/IDrumsey/Shelf-Stock"
     },
     {

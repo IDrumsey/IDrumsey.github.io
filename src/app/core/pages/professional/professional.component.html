@@ -41,6 +41,18 @@
     <app-card class="col-sm-12 col-md-5 skill-card" *ngFor="let project of projects" [title]="project.title" [description]="project.desc">
         <a style="display: block;" [href]="project.siteURL">{{project.siteURL}}</a>
         <a style="display: block;" [href]="project.codeURL">The code</a>
+        <div *ngIf="project.mainTechnologies != null">
+            <p>Main technologies used</p>
+            <ul>
+                <li *ngFor="let tech of project.mainTechnologies">{{tech}}</li>
+            </ul>
+        </div>
+        <div *ngIf="project.subTechnologies != null">
+            <p>Other technologies used</p>
+            <ul>
+                <li *ngFor="let tech of project.subTechnologies">{{tech}}</li>
+            </ul>
+        </div>
     </app-card>
 </div>
 <img style="height: 350px;" src="../../../../assets/pics/css.meme.jpg">
