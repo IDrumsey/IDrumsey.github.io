@@ -11,15 +11,13 @@ export class ProfessionalComponent implements OnInit {
   constructor(private theme: ThemeManagerService) { }
 
   ngOnInit(): void {
-    this.darkMode = this.theme.isDarkMode
   }
-
-  darkMode: boolean
 
   get cardStyles(): {} {
     return {
-      backgroundColor: this.darkMode ? "#3b3b3b" : "#fff",
-      borderColor: this.darkMode ? "#fff" : "#000"
+      backgroundColor: this.theme.isDarkMode ? "#2e2e2e" : "#fff",
+      borderColor: this.theme.isDarkMode ? "#fff" : "#000",
+      boxShadow: this.theme.isDarkMode ? "0 0 5px #fff" : "0 0 5px #000"
     }
   }
 

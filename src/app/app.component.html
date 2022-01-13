@@ -23,6 +23,7 @@
           <button mat-raised-button color="accent" class="w-100" (click)="onPersonalToggleBtnClick()">Personal</button>
         </div>
       </div>
+      <mat-slide-toggle [checked]="initTheme" (change)="onThemeBtnClick()">Dark mode</mat-slide-toggle>
       <hr>
       <div class="row">
         <div class="col-12" id="page-content">

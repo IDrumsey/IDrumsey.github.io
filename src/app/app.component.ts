@@ -10,11 +10,10 @@ import { ThemeManagerService } from './core/services/theme-manager.service';
 export class AppComponent {
 
   constructor(private router: Router, private theme: ThemeManagerService){
-    this.darkMode = theme.isDarkMode
+    this.initTheme = this.theme.isDarkMode
   }
 
-  // ---------------------------- STATE ----------------------------
-  darkMode: boolean
+  initTheme: boolean
 
   // ---------------------------- FUNCTIONALITY ----------------------------
 
@@ -28,8 +27,12 @@ export class AppComponent {
 
   get containerStyles(): {} {
     return {
-      backgroundColor: this.darkMode ? "rgb(20, 20, 20)" : "rgb(247, 243, 236)",
-      color: this.darkMode ? "#fff" : "#000"
+      backgroundColor: this.theme.isDarkMode ? "rgb(20, 20, 20)" : "rgb(247, 243, 236)",
+      color: this.theme.isDarkMode ? "#fff" : "#000"
     }
+  }
+
+  onThemeBtnClick() {
+    this.theme.swap()
   }
 }

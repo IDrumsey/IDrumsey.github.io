@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 
 // ------------------------- ANGULAR MATERIAL -------------------------
 import {MatButtonModule} from '@angular/material/button';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle'
+
 import { CardComponent } from './core/components/card/card.component';
 import { ProfessionalComponent } from './core/pages/professional/professional.component';
 import { PersonalComponent } from './core/pages/personal/personal.component'
@@ -20,7 +22,8 @@ import { PersonalComponent } from './core/pages/personal/personal.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
