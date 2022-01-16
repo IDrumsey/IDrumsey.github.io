@@ -39,8 +39,8 @@
 <img src="../../../../assets/pics/pexels-jeshootscom-834892.jpg" id="projects-pic">
 <div class="row mx-auto my-5" id="projects">
     <app-card [ngStyle]="cardStyles" class="col-sm-12 col-md-5 skill-card" *ngFor="let project of projects" [title]="project.title" [description]="project.desc">
-        <a style="display: block;" [href]="project.siteURL">{{project.siteURL}}</a>
-        <a style="display: block;" [href]="project.codeURL">The code</a>
+        <a style="display: block;" [href]="project.siteURL" target="_blank">{{project.siteURL}}</a>
+        <a style="display: block;" [href]="project.codeURL" target="_blank">The code</a>
         <div *ngIf="project.videoLink" class="video-wrapper">
             <iframe class="video" width="100%" height="auto" [src]="project.videoLink | safeURL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
