@@ -60,12 +60,20 @@ export class ProfessionalComponent implements OnInit {
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
       projects: [
         {
-          title: "Roadtrip IO",
-          link: ""
+          title: "Roadtrips IO",
+          link: "#Roadtrips IO"
         },
         {
           title: "Profile Project",
-          link: ""
+          link: "#Profile Project"
+        },
+        {
+          title: "Animal Adoption Center",
+          link: "#Animal Adoption Center"
+        },
+        {
+          title: "Poll App",
+          link: "#Poll App"
         }
       ]
     },
@@ -246,7 +254,8 @@ export class ProfessionalComponent implements OnInit {
         "Angular Material",
         "Express",
         "Nodemon",
-        "Bootstrap"
+        "Bootstrap",
+        "ChartJS"
       ]
     },
     {
