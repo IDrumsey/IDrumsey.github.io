@@ -87,6 +87,16 @@ iframe {
     width: 100%;
 }
 
+.quick-nav-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.quick-nav-link:hover {
+    text-decoration: underline;
+}
+
 @media (min-width: 540px){
     .grad-date {
         margin-left: auto;

@@ -1,5 +1,18 @@
 <!-- Education -->
-<div>
+<div id="quick-nav">
+    <ul>
+        <li>
+            <a class="quick-nav-link" href="#Education">Education</a>
+        </li>
+        <li>
+            <a class="quick-nav-link" href="#Skills">Skills</a>
+        </li>
+        <li>
+            <a class="quick-nav-link" href="#Projects">Projects</a>
+        </li>
+    </ul>
+</div>
+<div id="Education">
     <h1 style="font-weight: bold;" class="section-title">Education</h1>
     <img src="../../../../assets/pics/pexels-element-digital-1370296.jpg" id="education-pic">
     <h4 class="college-name mb-3">Kent State University at Stark</h4>
@@ -25,37 +38,41 @@
     </div>
 </div>
 <!-- skill cards -->
-<h1 style="font-weight: bold;" class="section-title mt-4">Skills</h1>
-<img src="../../../../assets/pics/pexels-pavel-chernonogov-2381463.jpg" id="skills-pic">
-<div class="row mx-auto my-5" id="skills">
-    <app-card [ngStyle]="cardStyles" class="col-sm-12 col-md-5 skill-card" *ngFor="let skill of skills" [title]="skill.title" [description]="skill.desc">
-        <img #icon [src]="skill.iconURL">
-        <a *ngFor="let project of skill.projects" [href]="project.link" style="display: block;">{{project.title}}</a>
-    </app-card>
+<div id="Skills">
+    <h1 style="font-weight: bold;" class="section-title mt-4">Skills</h1>
+    <img src="../../../../assets/pics/pexels-pavel-chernonogov-2381463.jpg" id="skills-pic">
+    <div class="row mx-auto my-5" id="skills">
+        <app-card [ngStyle]="cardStyles" class="col-sm-12 col-md-5 skill-card" *ngFor="let skill of skills" [title]="skill.title" [description]="skill.desc">
+            <img #icon [src]="skill.iconURL">
+            <a *ngFor="let project of skill.projects" [href]="project.link" style="display: block;">{{project.title}}</a>
+        </app-card>
+    </div>
 </div>
 <hr>
 <!-- Projects -->
-<h1 style="font-weight: bold;" class="section-title mt-4">Projects</h1>
-<img src="../../../../assets/pics/pexels-jeshootscom-834892.jpg" id="projects-pic">
-<div class="row mx-auto my-5" id="projects">
-    <app-card [ngStyle]="cardStyles" class="col-sm-12 col-md-5 skill-card" *ngFor="let project of projects" [title]="project.title" [description]="project.desc">
-        <a style="display: block;" [href]="project.siteURL" target="_blank">{{project.siteURL}}</a>
-        <a style="display: block;" [href]="project.codeURL" target="_blank">The code</a>
-        <div *ngIf="project.videoLink" class="video-wrapper">
-            <iframe class="video" width="100%" height="auto" [src]="project.videoLink | safeURL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div *ngIf="project.mainTechnologies != null">
-            <p>Main technologies used</p>
-            <ul>
-                <li *ngFor="let tech of project.mainTechnologies">{{tech}}</li>
-            </ul>
-        </div>
-        <div *ngIf="project.subTechnologies != null">
-            <p>Other technologies used</p>
-            <ul>
-                <li *ngFor="let tech of project.subTechnologies">{{tech}}</li>
-            </ul>
-        </div>
-    </app-card>
+<div id="Projects">
+    <h1 style="font-weight: bold;" class="section-title mt-4">Projects</h1>
+    <img src="../../../../assets/pics/pexels-jeshootscom-834892.jpg" id="projects-pic">
+    <div class="row mx-auto my-5" id="projects">
+        <app-card [ngStyle]="cardStyles" class="col-sm-12 col-md-5 skill-card" *ngFor="let project of projects" [title]="project.title" [description]="project.desc">
+            <a style="display: block;" [href]="project.siteURL" target="_blank">{{project.siteURL}}</a>
+            <a style="display: block;" [href]="project.codeURL" target="_blank">The code</a>
+            <div *ngIf="project.videoLink" class="video-wrapper">
+                <iframe class="video" width="100%" height="auto" [src]="project.videoLink | safeURL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div *ngIf="project.mainTechnologies != null">
+                <p>Main technologies used</p>
+                <ul>
+                    <li *ngFor="let tech of project.mainTechnologies">{{tech}}</li>
+                </ul>
+            </div>
+            <div *ngIf="project.subTechnologies != null">
+                <p>Other technologies used</p>
+                <ul>
+                    <li *ngFor="let tech of project.subTechnologies">{{tech}}</li>
+                </ul>
+            </div>
+        </app-card>
+    </div>
 </div>
 <img style="height: 350px;" src="../../../../assets/pics/css.meme.jpg">
