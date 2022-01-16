@@ -32,6 +32,12 @@ export class AppComponent {
     }
   }
 
+  getPicStyles(): {} {
+    return {
+      borderColor: this.theme.isDarkMode ? "rgb(20, 20, 20)" : "rgb(247, 243, 236)"
+    }
+  }
+
   onThemeBtnClick() {
     this.theme.swap()
   }

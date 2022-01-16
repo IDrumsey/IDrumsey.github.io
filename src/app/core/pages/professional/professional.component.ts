@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, SecurityContext } from '@angular/core';
 import { ThemeManagerService } from '../../services/theme-manager.service';
+import {DomSanitizer} from '@angular/platform-browser'
 
 @Component({
   selector: 'app-professional',
@@ -8,7 +9,7 @@ import { ThemeManagerService } from '../../services/theme-manager.service';
 })
 export class ProfessionalComponent implements OnInit {
 
-  constructor(private theme: ThemeManagerService) { }
+  constructor(private theme: ThemeManagerService, private sanitizer : DomSanitizer) { }
 
   ngOnInit(): void {
   }
@@ -155,13 +156,53 @@ export class ProfessionalComponent implements OnInit {
     siteURL?: string,
     codeURL: string,
     mainTechnologies?: string[],
-    subTechnologies?: string[]
+    subTechnologies?: string[],
+    videoLink?: string
   }[] = [
     {
       title: "Profile Project",
       desc: "Website for my future employers to see.",
       codeURL: "https://github.com/IDrumsey/IDrumsey.github.io",
       siteURL: "https://idrumsey.github.io/",
+      mainTechnologies: [
+        "Angular",
+      ],
+      subTechnologies: [
+        "Angular Material",
+      ]
+    },
+    {
+      title: "Roadtrips IO",
+      desc: "The most extensive and coolest site I've built. Just the frontend so far. This was a website that I really liked working on. I started on the concept based around van life. Basically the site allows you to plan out roadtrips using Google Map's JS API. I didn't fully finish it, but got really far. My free trial of the API ran out lol.",
+      codeURL: "https://github.com/IDrumsey/RoadTripsIO",
+      mainTechnologies: [
+        "Angular",
+      ],
+      subTechnologies: [
+        "Angular Material",
+      ],
+      videoLink: "https://www.youtube.com/embed/_t-zrlVHXXE"
+    },
+    {
+      title: "Shelf-Stock",
+      desc: "A website that allows a store to show keep track of where there products are located within their store. The idea is that a customer could use this to find where in a store they needed to go to get their products.",
+      codeURL: "https://github.com/IDrumsey/Shelf-Stock",
+      mainTechnologies: [
+        "React",
+        "Nodejs",
+        "MongoDB",
+      ],
+      subTechnologies: [
+        "Express",
+        "Nodemon",
+      ],
+      videoLink: "https://www.youtube.com/embed/lhLO08vDvIo"
+    },
+    {
+      title: "Poll App",
+      desc: "This was the most recent project I've done except for the Profile project. It's pretty simple and just allows people to create polls and answer polls.",
+      siteURL: "http://mypollapp.com/",
+      codeURL: "https://github.com/IDrumsey/PollApp",
       mainTechnologies: [
         "Angular",
         "Nodejs",
@@ -175,40 +216,46 @@ export class ProfessionalComponent implements OnInit {
       ]
     },
     {
-      title: "Roadtrips IO",
-      desc: "This is a website that I really liked working on. I started on the concept of van life. Basically it allows you to plan out roadtrips using Google Map's JS API. I didn't fully finish it, but got really far. My free trial of the API ran out lol.",
-      codeURL: "https://github.com/IDrumsey/Shelf-Stock"
-    },
-    {
-      title: "Shelf-Stock",
-      desc: "A website that allows a store to show keep track of where there products are located within their store. The idea is that a customer could use this to find where in a store they needed to go to get their products.",
-      codeURL: "https://github.com/IDrumsey/Shelf-Stock"
-    },
-    {
-      title: "Poll App",
-      desc: "This was the most recent project I've done except for the Profile project. It's pretty simple and just allows people to create polls and answer polls.",
-      siteURL: "http://mypollapp.com/",
-      codeURL: "https://github.com/IDrumsey/PollApp"
-    },
-    {
       title: "Platform",
       desc: "This website is pretty much just a devoted comment section. It's just for people to discuss stuff. Kindof like reddit but a lot less functionality.",
-      codeURL: "https://github.com/IDrumsey/Platform"
+      codeURL: "https://github.com/IDrumsey/Platform",
+      mainTechnologies: [
+        "PHP"
+      ]
     },
     {
       title: "Animal Adoption Center",
       desc: "",
-      codeURL: "https://github.com/IDrumsey/PollApp"
+      codeURL: "https://github.com/IDrumsey/PollApp",
+      mainTechnologies: [
+        "Angular",
+        ".NET",
+        "I think Microsoft SQL Server for db"
+      ]
     },
     {
       title: "Interact",
       desc: "This was a website that I didn't finish but put a lot of time into. It's for setting up esports tournaments.",
-      codeURL: "https://github.com/IDrumsey/Interact"
+      codeURL: "https://github.com/IDrumsey/Interact",
+      mainTechnologies: [
+        "PHP",
+        "MySQL"
+      ],
     },
     {
       title: "Lists",
       desc: "This is just a beefed up todo list app.",
-      codeURL: "https://github.com/IDrumsey/Interact"
+      codeURL: "https://github.com/IDrumsey/Lists",
+      mainTechnologies: [
+        "MongoDB",
+        "Angular",
+        "NodeJS"
+      ],
+      subTechnologies: [
+        "Express",
+        "JWT"
+      ],
+      videoLink: "https://www.youtube.com/embed/TW3lyGoQWWo"
     }
   ]
 }

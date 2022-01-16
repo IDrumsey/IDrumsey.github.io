@@ -10,14 +10,16 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle'
 
 import { CardComponent } from './core/components/card/card.component';
 import { ProfessionalComponent } from './core/pages/professional/professional.component';
-import { PersonalComponent } from './core/pages/personal/personal.component'
+import { PersonalComponent } from './core/pages/personal/personal.component';
+import { SafeURLPipe } from './core/pipes/safe-url.pipe'
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     ProfessionalComponent,
-    PersonalComponent
+    PersonalComponent,
+    SafeURLPipe
   ],
   imports: [
     BrowserModule,

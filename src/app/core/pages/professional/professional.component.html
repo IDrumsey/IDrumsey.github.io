@@ -2,18 +2,18 @@
 <div>
     <h1 style="font-weight: bold;" class="section-title">Education</h1>
     <img src="../../../../assets/pics/pexels-element-digital-1370296.jpg" id="education-pic">
-    <h4 class="college-name mb-3">College name</h4>
+    <h4 class="college-name mb-3">Kent State University at Stark</h4>
     <div class="metadata-grad-info mb-3">
         <h5 class="mb-0">Bachelor's of Computer Science</h5>
         <h6 style="font-style: italic;" class="grad-date">Spring 2022</h6>
     </div>
-    <h6 style="font-style: italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laboriosam officiis quibusdam aspernatur mollitia provident qui beatae inventore adipisci soluta nam praesentium rem accusamus est dolorum enim eaque ad dolores explicabo doloribus consequuntur repudiandae, fuga porro? Aliquid a exercitationem eaque.</h6>
+    <h6 style="font-style: italic;"></h6>
 </div>
 <hr>
 <h1 style="font-weight: bold;" class="section-title">Other Qualifications</h1>
 <ul>
     <li>Eagle Scout</li>
-    <li>IT Internship with Stark County Sheriff's Office</li>
+    <li>IT Internship with Stark County Sheriff's Office (Spring 2021)</li>
 </ul>
 <hr>
 <h1 style="font-weight: bold;" class="section-title mt-4">Youtube</h1>
@@ -41,6 +41,9 @@
     <app-card [ngStyle]="cardStyles" class="col-sm-12 col-md-5 skill-card" *ngFor="let project of projects" [title]="project.title" [description]="project.desc">
         <a style="display: block;" [href]="project.siteURL">{{project.siteURL}}</a>
         <a style="display: block;" [href]="project.codeURL">The code</a>
+        <div *ngIf="project.videoLink" class="video-wrapper">
+            <iframe class="video" width="100%" height="auto" [src]="project.videoLink | safeURL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
         <div *ngIf="project.mainTechnologies != null">
             <p>Main technologies used</p>
             <ul>
