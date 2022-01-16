@@ -76,7 +76,11 @@ export class ProfessionalComponent implements OnInit {
       projects: [
         {
           title: "Shelf-Stock",
-          link: ""
+          link: "#Shelf-Stock"
+        },
+        {
+          title: "Lists",
+          link: "#Lists"
         }
       ]
     },
@@ -87,7 +91,15 @@ export class ProfessionalComponent implements OnInit {
       projects: [
         {
           title: "Shelf-Stock",
-          link: ""
+          link: "#Shelf-Stock"
+        },
+        {
+          title: "Lists",
+          link: "#Lists"
+        },
+        {
+          title: "Poll App",
+          link: "#Poll App"
         }
       ]
     },
@@ -95,13 +107,27 @@ export class ProfessionalComponent implements OnInit {
       title: "PHP",
       desc: "This was the first backend language I used. Used this a lot in my college web dev classes.",
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
-      projects: []
+      projects: [
+        {
+          title: "Interact",
+          link: "#Interact"
+        },
+        {
+          title: "Platform",
+          link: "#Platform"
+        }
+      ]
     },
     {
       title: "Laravel",
       desc: "PHP framework I used in a project.",
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg",
-      projects: []
+      projects: [
+        {
+          title: "Lists API (Laravel version)",
+          link: "https://github.com/IDrumsey/Lists-API"
+        }
+      ]
     },
     {
       title: "Node JS",
@@ -109,8 +135,16 @@ export class ProfessionalComponent implements OnInit {
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
       projects: [
         {
-          title: "Lists App API",
-          link: ""
+          title: "Shelf-Stock",
+          link: "#Shelf-Stock"
+        },
+        {
+          title: "Lists",
+          link: "#Lists"
+        },
+        {
+          title: "Poll App",
+          link: "#Poll App"
         }
       ]
     },
@@ -118,35 +152,35 @@ export class ProfessionalComponent implements OnInit {
       title: "Passport JS",
       desc: "Used this for authentication on one of the sites I built",
       iconURL: "",
-      projects: []
+      projects: [
+        {
+          title: "Shelf-Stock",
+          link: "#Shelf-Stock"
+        }
+      ]
     },
     {
       title: "C#",
       desc: "Learned this for the backed of a website I built. Used .NET",
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
-      projects: []
+      projects: [
+        {
+          title: "Animal Adoption Center",
+          link: "#Animal Adoption Center"
+        }
+      ]
     },
     {
       title: "C++",
       desc: "Learned C++ throughout college",
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-      projects: [
-        {
-          title: "Maze Time Trial",
-          link: ""
-        }
-      ]
+      projects: []
     },
     {
       title: "Python",
-      desc: "Used Python for cryptology class",
+      desc: "Used Python for a cryptology class and learned some web scraping with it.",
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-      projects: [
-        {
-          title: "Stock scraper",
-          link: ""
-        }
-      ]
+      projects: []
     }
   ]
 
