@@ -23,8 +23,7 @@ export class ProfessionalComponent implements OnInit {
   }
 
   skills: {
-    title: string,
-    desc: string,
+    title: string
     iconURL: string | undefined,
     projects: {
       title: string
@@ -33,7 +32,6 @@ export class ProfessionalComponent implements OnInit {
   }[] = [
     {
       title: "Javascript",
-      desc: "Used javascript from vanilla to frameworks like Angular.",
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
       projects: [
         {
@@ -44,19 +42,16 @@ export class ProfessionalComponent implements OnInit {
     },
     {
       title: "HTML",
-      desc: "Used this in all of my web dev adventures",
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
       projects: []
     },
     {
       title: "CSS",
-      desc: "My arch-nemesis",
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
       projects: []
     },
     {
       title: "Angular",
-      desc: "Started learning Angular in the summer of 21 is my preffered javascript framework.",
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
       projects: [
         {
@@ -79,7 +74,6 @@ export class ProfessionalComponent implements OnInit {
     },
     {
       title: "React",
-      desc: "Was the first js framework I tried.",
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
       projects: [
         {
@@ -94,7 +88,6 @@ export class ProfessionalComponent implements OnInit {
     },
     {
       title: "Mongo DB",
-      desc: "Used this as the db for one or two of the sites I made. I like this technology because it's a NoSQL database :)",
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
       projects: [
         {
@@ -113,7 +106,6 @@ export class ProfessionalComponent implements OnInit {
     },
     {
       title: "PHP",
-      desc: "This was the first backend language I used. Used this a lot in my college web dev classes.",
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
       projects: [
         {
@@ -128,7 +120,6 @@ export class ProfessionalComponent implements OnInit {
     },
     {
       title: "Laravel",
-      desc: "PHP framework I used in a project.",
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg",
       projects: [
         {
@@ -139,7 +130,6 @@ export class ProfessionalComponent implements OnInit {
     },
     {
       title: "Node JS",
-      desc: "Used this as I was starting to learn about javascript frameworks and npm.",
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
       projects: [
         {
@@ -158,7 +148,6 @@ export class ProfessionalComponent implements OnInit {
     },
     {
       title: "Passport JS",
-      desc: "Used this for authentication on one of the sites I built",
       iconURL: "",
       projects: [
         {
@@ -169,7 +158,6 @@ export class ProfessionalComponent implements OnInit {
     },
     {
       title: "C#",
-      desc: "Learned this for the backed of a website I built. Used .NET",
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
       projects: [
         {
@@ -180,13 +168,11 @@ export class ProfessionalComponent implements OnInit {
     },
     {
       title: "C++",
-      desc: "Learned C++ throughout college",
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
       projects: []
     },
     {
       title: "Python",
-      desc: "Used Python for a cryptology class and learned some web scraping with it.",
       iconURL: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
       projects: []
     }

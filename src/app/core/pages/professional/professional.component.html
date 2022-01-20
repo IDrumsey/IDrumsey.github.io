@@ -45,7 +45,7 @@
     <h1 style="font-weight: bold;" class="section-title mt-4">Skills</h1>
     <img src="../../../../assets/pics/pexels-pavel-chernonogov-2381463.jpg" id="skills-pic">
     <div class="row mx-auto my-5" id="skills">
-        <app-card [ngStyle]="cardStyles" class="col-sm-12 col-md-5 skill-card" *ngFor="let skill of skills" [title]="skill.title" [description]="skill.desc">
+        <app-card [ngStyle]="cardStyles" class="col-sm-12 col-md-5 skill-card" *ngFor="let skill of skills" [title]="skill.title">
             <img #icon [src]="skill.iconURL">
             <a *ngFor="let project of skill.projects" [href]="project.link" style="display: block;">{{project.title}}</a>
         </app-card>
