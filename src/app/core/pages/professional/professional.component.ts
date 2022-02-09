@@ -255,7 +255,7 @@ export class ProfessionalComponent implements OnInit {
     {
       title: "Animal Adoption Center",
       desc: "",
-      codeURL: "https://github.com/IDrumsey/PollApp",
+      codeURL: "https://github.com/IDrumsey/AAC-Client",
       mainTechnologies: [
         "Angular",
         ".NET",
